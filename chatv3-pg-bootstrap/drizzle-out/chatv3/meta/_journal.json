@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1781289992504,
+      "tag": "0000_dry_ego",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1781294691809,
+      "tag": "0001_nosy_obadiah_stane",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1781358598953,
+      "tag": "0002_narrow_darkhawk",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1781442152184,
+      "tag": "0003_damp_zarek",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1783033656476,
+      "tag": "0004_nervous_martin_li",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1783152000000,
+      "tag": "0005_chatv3_server_encrypted_mode",
+      "breakpoints": true
+    }
+  ]
+}

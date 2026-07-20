@@ -1,0 +1,65 @@
+{
+  "name": "@aopslab/light-client-core",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Domain-neutral foundation for light, browser-first clients: runtime config, envelope-aware HTTP, credential/token provider, ticket-first stream transport, CryptoKey-capable KeyValue storage, UI tokens + minimal app-shell. Contract: chatv3-core/resources/light-client-core-contract.md.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./stream": {
+      "types": "./dist/stream/index.d.ts",
+      "default": "./dist/stream/index.js"
+    },
+    "./storage": {
+      "types": "./dist/storage/index.d.ts",
+      "default": "./dist/storage/index.js"
+    },
+    "./ui": {
+      "types": "./dist/ui/index.d.ts",
+      "default": "./dist/ui/index.js"
+    },
+    "./ui/tokens.css": "./src/ui/tokens.css"
+  },
+  "files": [
+    "dist",
+    "src/ui/tokens.css",
+    "!**/*.tsbuildinfo",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.lib.json",
+    "typecheck": "tsc -p tsconfig.lib.json --noEmit --incremental false",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "react": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eeemzs/chatv3.git",
+    "directory": "light-client-core"
+  }
+}

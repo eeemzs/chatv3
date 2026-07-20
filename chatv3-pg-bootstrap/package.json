@@ -1,0 +1,49 @@
+{
+  "name": "@aopslab/domain-pg-bootstrap-chatv3",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Owned PostgreSQL bootstrap/migration runner for ChatV3 standalone/runtime flows.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "sync:migrations": "node ./scripts/sync-migrations.mjs",
+    "build": "pnpm run sync:migrations && tsc -p tsconfig.lib.json",
+    "typecheck": "tsc -p tsconfig.lib.json --noEmit --incremental false",
+    "smoke:packed-install": "node ./scripts/packed-install-smoke.mjs",
+    "prepack": "pnpm run build"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "drizzle-out",
+    "!**/*.tsbuildinfo",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "dependencies": {
+    "pg": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/pg": "catalog:",
+    "typescript": "catalog:"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eeemzs/chatv3.git",
+    "directory": "chatv3-pg-bootstrap"
+  }
+}

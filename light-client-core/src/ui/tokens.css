@@ -1,0 +1,48 @@
+/* UI System v2 design tokens (light-client-core ./ui). Tokens only — app
+   base styles and components live in consumers. */
+:root {
+  --bg: #f4ecde;
+  --bg-dim: #ede3d2;
+  --surface: #fbf6ee;
+  --surface-2: #f8f1e4;
+  --surface-elev: #fffcf6;
+  --text: #2a211c;
+  --text-2: #4a3f36;
+  --text-muted: #8b7e72;
+  --text-faint: #b5a795;
+  --coral: #d97757;
+  --coral-tint: #fbe8dc;
+  --amber: #e89a4a;
+  --sage: #5b8b6f;
+  --sage-tint: #e1ecdf;
+  --claret: #b3503c;
+  --indigo: #4a6b91;
+  --indigo-soft: #c8d4e2;
+  --border: #e3d6c2;
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 10px;
+  --radius-pill: 999px;
+  --row-h: 36px;
+  --gutter: 16px;
+  --gutter-sm: 12px;
+  --font-display: "Outfit", -apple-system, system-ui, sans-serif;
+  --font-body: "DM Sans", -apple-system, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1612;
+    --bg-dim: #15110d;
+    --surface: #221c16;
+    --surface-2: #2a2219;
+    --surface-elev: #2e251c;
+    --text: #f0e4d2;
+    --text-2: #d8cbb6;
+    --text-muted: #a2917c;
+    --text-faint: #6f6253;
+    --coral-tint: #3a261c;
+    --sage-tint: #1f2b22;
+    --border: #382e22;
+  }
+}

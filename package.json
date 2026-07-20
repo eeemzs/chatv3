@@ -1,0 +1,35 @@
+{
+  "name": "@aopslab/chatv3-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source ChatV3 domain workspace.",
+  "workspaces": [
+    "light-client-core",
+    "chatv3-product-client",
+    "chatv3-pg-bootstrap",
+    "chatv3-dm",
+    "chatv3-kit",
+    "chatv3-host-plugin"
+  ],
+  "scripts": {
+    "build:light-client-core": "pnpm --filter @aopslab/light-client-core run build",
+    "build:product-client": "pnpm --filter @aopslab/domain-product-client-chatv3 run build",
+    "build:pg-bootstrap": "pnpm --filter @aopslab/domain-pg-bootstrap-chatv3 run build",
+    "build:dm": "pnpm --filter @aopslab/domain-dm-chatv3 run build",
+    "build:kit": "pnpm --filter @aopslab/domain-kit-chatv3 run build",
+    "build:host-plugin": "pnpm --filter @aopslab/domain-host-plugin-chatv3 run build",
+    "build": "pnpm run build:light-client-core && pnpm run build:product-client && pnpm run build:pg-bootstrap && pnpm run build:dm && pnpm run build:kit && pnpm run build:host-plugin",
+    "typecheck": "pnpm -r --if-present run typecheck",
+    "test": "pnpm -r --if-present run test",
+    "ci": "pnpm run build && pnpm run typecheck && pnpm run test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eeemzs/chatv3.git"
+  }
+}

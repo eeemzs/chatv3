@@ -1,0 +1,27 @@
+packages:
+  - "light-client-core"
+  - "chatv3-product-client"
+  - "chatv3-pg-bootstrap"
+  - "chatv3-dm"
+  - "chatv3-kit"
+  - "chatv3-host-plugin"
+
+confirmModulesPurge: false
+catalogMode: strict
+linkWorkspacePackages: true
+
+allowBuilds:
+  esbuild: true
+
+catalog:
+  "@types/node": "25.3.0"
+  "@types/pg": "8.20.0"
+  "@types/react": "19.2.14"
+  "drizzle-kit": "0.31.9"
+  "drizzle-orm": "0.45.1"
+  "pg": "8.20.0"
+  "react": "19.2.4"
+  "typescript": "5.9.3"
+  "uuid": "11.1.0"
+  "vitest": "4.0.18"
+  "zod": "4.4.3"

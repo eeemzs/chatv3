@@ -1,0 +1,48 @@
+{
+  "name": "@aopslab/domain-kit-chatv3",
+  "version": "0.1.0",
+  "description": "ChatV3 operation kit: catalog, REST route projection and capability manifest projected from chatv3-dm zod contracts.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "scripts",
+    "!**/*.tsbuildinfo",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.lib.json",
+    "typecheck": "tsc -p tsconfig.lib.json --noEmit --incremental false",
+    "test": "vitest run",
+    "manifest:export": "node scripts/export-manifests.mjs",
+    "manifest:build": "pnpm run build && pnpm run manifest:export"
+  },
+  "dependencies": {
+    "@aopslab/domain-dm-chatv3": "0.1.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eeemzs/chatv3.git",
+    "directory": "chatv3-kit"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@aopslab/domain-product-client-chatv3",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "ChatV3 browser-safe client SDK: HTTP+SSE, v0 split-secret client crypto (WebCrypto: HKDF-SHA256 + AES-256-GCM), invite strings, and KeyStore abstraction over light-client-core.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!**/*.tsbuildinfo",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.lib.json",
+    "typecheck": "tsc -p tsconfig.lib.json --noEmit --incremental false",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "dependencies": {
+    "@aopslab/light-client-core": "0.1.0"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eeemzs/chatv3.git",
+    "directory": "chatv3-product-client"
+  }
+}

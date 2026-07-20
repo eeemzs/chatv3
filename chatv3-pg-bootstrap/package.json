@@ -1,6 +1,6 @@
 {
   "name": "@aopslab/domain-pg-bootstrap-chatv3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Owned PostgreSQL bootstrap/migration runner for ChatV3 standalone/runtime flows.",
   "main": "./dist/index.js",

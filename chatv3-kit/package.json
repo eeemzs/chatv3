@@ -1,6 +1,6 @@
 {
   "name": "@aopslab/domain-kit-chatv3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ChatV3 operation kit: catalog, REST route projection and capability manifest projected from chatv3-dm zod contracts.",
   "type": "module",
   "main": "./dist/index.js",
@@ -27,7 +27,7 @@
     "manifest:build": "pnpm run build && pnpm run manifest:export"
   },
   "dependencies": {
-    "@aopslab/domain-dm-chatv3": "0.1.0",
+    "@aopslab/domain-dm-chatv3": "0.1.1",
     "zod": "catalog:"
   },
   "devDependencies": {

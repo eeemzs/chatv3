@@ -1,6 +1,6 @@
 {
   "name": "@aopslab/domain-product-client-chatv3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "ChatV3 browser-safe client SDK: HTTP+SSE, v0 split-secret client crypto (WebCrypto: HKDF-SHA256 + AES-256-GCM), invite strings, and KeyStore abstraction over light-client-core.",
   "main": "./dist/index.js",
@@ -29,7 +29,7 @@
     "vitest": "catalog:"
   },
   "dependencies": {
-    "@aopslab/light-client-core": "0.1.0"
+    "@aopslab/light-client-core": "0.1.1"
   },
   "license": "Apache-2.0",
   "publishConfig": {

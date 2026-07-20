@@ -1,6 +1,6 @@
 {
   "name": "@aopslab/domain-host-plugin-chatv3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ChatV3 host plugin: DomainPlugin registration, REST execute bridge, SSE runtime. Hostable in aops-server or any structural-compatible host.",
   "type": "module",
   "main": "./dist/index.js",
@@ -24,9 +24,9 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@aopslab/domain-dm-chatv3": "0.1.0",
-    "@aopslab/domain-kit-chatv3": "0.1.0",
-    "@aopslab/domain-pg-bootstrap-chatv3": "0.1.0"
+    "@aopslab/domain-dm-chatv3": "0.1.1",
+    "@aopslab/domain-kit-chatv3": "0.1.1",
+    "@aopslab/domain-pg-bootstrap-chatv3": "0.1.1"
   },
   "devDependencies": {
     "@types/node": "catalog:",

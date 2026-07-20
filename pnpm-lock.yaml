@@ -19,8 +19,8 @@ catalogs:
       specifier: 0.31.9
       version: 0.31.9
     drizzle-orm:
-      specifier: 0.45.1
-      version: 0.45.1
+      specifier: 0.45.2
+      version: 0.45.2
     pg:
       specifier: 8.20.0
       version: 8.20.0
@@ -31,8 +31,8 @@ catalogs:
       specifier: 5.9.3
       version: 5.9.3
     uuid:
-      specifier: 11.1.0
-      version: 11.1.0
+      specifier: 11.1.1
+      version: 11.1.1
     vitest:
       specifier: 4.0.18
       version: 4.0.18
@@ -48,19 +48,19 @@ importers:
     dependencies:
       drizzle-orm:
         specifier: 'catalog:'
-        version: 0.45.1(@types/pg@8.20.0)(pg@8.20.0)
+        version: 0.45.2(@types/pg@8.20.0)(pg@8.20.0)
       pg:
         specifier: 'catalog:'
         version: 8.20.0
       uuid:
         specifier: 'catalog:'
-        version: 11.1.0
+        version: 11.1.1
       zod:
         specifier: 'catalog:'
         version: 4.4.3
     devDependencies:
       '@aopslab/domain-pg-bootstrap-chatv3':
-        specifier: 0.1.0
+        specifier: 0.1.1
         version: link:../chatv3-pg-bootstrap
       '@types/node':
         specifier: 'catalog:'
@@ -81,13 +81,13 @@ importers:
   chatv3-host-plugin:
     dependencies:
       '@aopslab/domain-dm-chatv3':
-        specifier: 0.1.0
+        specifier: 0.1.1
         version: link:../chatv3-dm
       '@aopslab/domain-kit-chatv3':
-        specifier: 0.1.0
+        specifier: 0.1.1
         version: link:../chatv3-kit
       '@aopslab/domain-pg-bootstrap-chatv3':
-        specifier: 0.1.0
+        specifier: 0.1.1
         version: link:../chatv3-pg-bootstrap
     devDependencies:
       '@types/node':
@@ -103,7 +103,7 @@ importers:
   chatv3-kit:
     dependencies:
       '@aopslab/domain-dm-chatv3':
-        specifier: 0.1.0
+        specifier: 0.1.1
         version: link:../chatv3-dm
       zod:
         specifier: 'catalog:'
@@ -138,7 +138,7 @@ importers:
   chatv3-product-client:
     dependencies:
       '@aopslab/light-client-core':
-        specifier: 0.1.0
+        specifier: 0.1.1
         version: link:../light-client-core
     devDependencies:
       '@types/node':
@@ -844,8 +844,8 @@ packages:
     resolution: {integrity: sha512-GViD3IgsXn7trFyBUUHyTFBpH/FsHTxYJ66qdbVggxef4UBPHRYxQaRzYLTuekYnk9i5FIEL9pbBIwMqX/Uwrg==}
     hasBin: true
 
-  drizzle-orm@0.45.1:
-    resolution: {integrity: sha512-Te0FOdKIistGNPMq2jscdqngBRfBpC8uMFVwqjf6gtTVJHIQ/dosgV/CLBU2N4ZJBsXL5savCba9b0YJskKdcA==}
+  drizzle-orm@0.45.2:
+    resolution: {integrity: sha512-kY0BSaTNYWnoDMVoyY8uxmyHjpJW1geOmBMdSSicKo9CIIWkSxMIj2rkeSR51b8KAPB7m+qysjuHme5nKP+E5Q==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -1121,8 +1121,8 @@ packages:
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
-  uuid@11.1.0:
-    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+  uuid@11.1.1:
+    resolution: {integrity: sha512-vIYxrBCC/N/K+Js3qSN88go7kIfNPssr/hHCesKCQNAjmgvYS2oqr69kIufEG+O4+PfezOH4EbIeHCfFov8ZgQ==}
     hasBin: true
 
   vite@7.3.6:
@@ -1609,7 +1609,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.45.1(@types/pg@8.20.0)(pg@8.20.0):
+  drizzle-orm@0.45.2(@types/pg@8.20.0)(pg@8.20.0):
     optionalDependencies:
       '@types/pg': 8.20.0
       pg: 8.20.0
@@ -1857,7 +1857,7 @@ snapshots:
 
   undici-types@7.18.2: {}
 
-  uuid@11.1.0: {}
+  uuid@11.1.1: {}
 
   vite@7.3.6(@types/node@25.3.0):
     dependencies:

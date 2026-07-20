@@ -1,6 +1,6 @@
 {
   "name": "@aopslab/light-client-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Domain-neutral foundation for light, browser-first clients: runtime config, envelope-aware HTTP, credential/token provider, ticket-first stream transport, CryptoKey-capable KeyValue storage, UI tokens + minimal app-shell. Contract: chatv3-core/resources/light-client-core-contract.md.",
   "main": "./dist/index.js",

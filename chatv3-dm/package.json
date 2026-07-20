@@ -1,6 +1,6 @@
 {
   "name": "@aopslab/domain-dm-chatv3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ChatV3 standalone chat domain model: schema, repositories, services, crypto-opaque contracts. No AOPS domain dependencies.",
   "type": "module",
   "main": "./dist/index.js",
@@ -43,7 +43,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@aopslab/domain-pg-bootstrap-chatv3": "0.1.0",
+    "@aopslab/domain-pg-bootstrap-chatv3": "0.1.1",
     "@types/node": "catalog:",
     "@types/pg": "catalog:",
     "drizzle-kit": "catalog:",
